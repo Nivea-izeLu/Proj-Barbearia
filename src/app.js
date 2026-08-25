@@ -8,14 +8,6 @@ const app = express();
 const PORT = 3000;
 app.use(cors());
 
-//configuração do mysql
-const dbConfig = {
-    host: 'localhost',
-    user: 'root',
-    password: '',
-    database: ''
-}
-
 app.use(express.json());
 app.use('/api', agendamentoRoutes);
 
