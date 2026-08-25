@@ -1,0 +1,12 @@
+CREATE DATABASE IF NOT EXISTS Agendamentos;
+
+USE Agendamentos;
+
+CREATE TABLE IF NOT EXISTS agendamento (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL,
+    procedimento VARCHAR(255) NOT NULL,
+    dia DATE NOT NULL,
+    hora TIME NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
