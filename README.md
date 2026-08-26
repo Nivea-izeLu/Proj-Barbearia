@@ -1,6 +1,6 @@
 <h1>Projeto Barbearia</h1> 
 
-<p>Feito por: Nívea, Annah, Thiago, Yan e Sophia</p>
+<p>Feito por: Annah, Nívea, Thiago, Sophia e Yan </p>
 
 <hr>
 
