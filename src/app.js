@@ -1,14 +1,14 @@
 import express from 'express';
 import cors from 'cors';
 
-import agendamentoRoutes
-    from './routes/agendamentoRoutes.js';
+import agendamentoRoutes from './routes/agendamentoRoutes.js';
 
 const app = express();
 const PORT = 3000;
-app.use(cors());
 
+app.use(cors());
 app.use(express.json());
+
 app.use('/api', agendamentoRoutes);
 
 app.get('/', (req, res) => {
@@ -18,7 +18,5 @@ app.get('/', (req, res) => {
 });
 
 app.listen(PORT, () => {
-    console.log(
-        `Servidor rodando em http://localhost:${PORT}`
-    );
+    console.log(`Servidor rodando em http://localhost:${PORT}`);
 });

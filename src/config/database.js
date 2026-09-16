@@ -3,8 +3,9 @@ import mysql from 'mysql2/promise';
 const dbConfig = {
     host: 'localhost',
     user: 'root',
-    password: '',
-    database: 'Agendamentos'
+    password: 'aluno',
+    database: 'Agendamentos',
+    port: '3302'
 };
 
 export async function conectarBanco() {

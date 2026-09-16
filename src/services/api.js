@@ -1,8 +1,7 @@
 const API_URL = 'http://localhost:3000';
 
 export async function salvarAgendamento(dadosAgendamento) {
-
-    const response = await fetch(`${API_URL}/salvar-agendamento`, {
+    const response = await fetch(`${API_URL}/api/agendamentos`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -10,11 +9,13 @@ export async function salvarAgendamento(dadosAgendamento) {
         body: JSON.stringify(dadosAgendamento),
     });
 
-
     const result = await response.json();
+
     if (!response.ok) {
-        throw new Error(result.message || 'Erro ao realizar agendamento');
+        throw new Error(
+            result.message || 'Erro ao realizar agendamento'
+        );
     }
 
-    return response.json();
+    return result;
 }

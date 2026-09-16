@@ -1,17 +1,22 @@
+import { useState } from "react";
+
 import AgendamentoForm from "./componentes/AgendamentoForm";
 import Footer from "./componentes/Footer";
 import Header from "./componentes/Header";
-import Resposta from "./componentes/Resposta"
+import Resposta from "./componentes/Resposta";
 
-export default function App(){
-  return(
+export default function App() {
+    const [mensagem, setMensagem] = useState("");
 
-    <div>
-        <Header/>
-        <AgendamentoForm/>
-        <Resposta/>
-        <Footer/>
-    </div>
-    
-  )
+    return (
+        <div>
+            <Header />
+
+            <AgendamentoForm setMensagem={setMensagem} />
+
+            <Resposta mensagem={mensagem} />
+
+            <Footer />
+        </div>
+    );
 }
