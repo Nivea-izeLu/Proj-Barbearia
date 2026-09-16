@@ -7,7 +7,7 @@
 
 /*  Fundo e alinhamento geral */
 body {
-  background: url('../assets/img.jpg') no-repeat center center fixed;
+  background: url('../assets/img.png') no-repeat center center fixed;
   background-size: cover;
   font-family: 'Segoe UI', sans-serif;
   display: flex;
@@ -27,7 +27,7 @@ body {
   max-width: 520px;
   background: rgba(255, 255, 255, 0.8);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-  border: 5px solid #dde010;
+  border: 5px solid #2b1237;
   height: auto;
 }
 
