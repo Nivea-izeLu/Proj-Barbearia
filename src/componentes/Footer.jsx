@@ -10,7 +10,7 @@ export default function Footer(){
       bottom: '0', 
       width: '100%'
       }}>
-      <p>Barbearia Pontes</p>
+      <p>Made by ETEC Albert Einstein</p>
     </header>
     )
 }

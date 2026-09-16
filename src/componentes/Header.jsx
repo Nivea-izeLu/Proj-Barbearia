@@ -9,7 +9,8 @@ export default function Header(){
       marginTop: '30px',
       bottom: '0', 
       width: '100%'}}>
-      <h1>Barbearia</h1>
+      <h1>Barbearia Pontes</h1>
+      <p> O melhor entre os dois caminhos </p>
     </header>
     );
 }
