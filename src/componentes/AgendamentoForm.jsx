@@ -35,7 +35,7 @@ export default function AgendamentoForm ({ setMensagem})  {
 
     return (
         <form id="agendamento-form" onSubmit={handleSubmit}>
-            <h1>Barbearia JS</h1>
+            <h1></h1>
 
             <p>
                 Informe o nome:

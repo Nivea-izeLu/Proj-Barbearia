@@ -5,8 +5,7 @@ export default function Header(){
       color: 'white',
       padding: '40px 20px',
       borderRadius: '0 0 10px 10px'}}>
-      <h1>aa</h1>
-      <p>bb</p>
+      <h1>Barbearia</h1>
     </header>
     );
 }
